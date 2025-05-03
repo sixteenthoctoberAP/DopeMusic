@@ -59,7 +59,22 @@ header nav ul {
     font-weight: 600;   
 }
 
-header nav ul li a {
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    height: 48px;
+    line-height: 48px; /* Выравниваем текст по вертикали */
+}
+
+nav ul li {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
     text-decoration: none;
     color: #ffffff;
 }
@@ -127,4 +142,48 @@ html, body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: relative;
+    z-index: 1;
 }
+
+/* main {
+    padding-top: 152px;  
+} */
+
+
+
+/* navbar */
+
+nav{
+    font-size: 25px;
+    font-weight: 400;
+}
+.navbar nav {
+    width: 100%;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li:first-child {
+    margin-left: 16px;
+}
+
+.navbar nav ul li:last-child {
+    margin-right: 4px;
+}
+
+/* Стили для страницы contacts */
+.page-contacts .navbar nav ul {
+    justify-content: flex-start;
+    gap: 88px;
+}
+
+
+
